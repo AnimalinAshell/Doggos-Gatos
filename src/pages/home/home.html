@@ -9,8 +9,8 @@
     Here you can find pictures of rat bears
   </p>
   <ion-list>
-    <ion-item *ngFor="let post of posts">
-      <ion-img [src]="post.data.url"></ion-img>
+    <ion-item *ngFor="let pic of this.pics">
+      <img src={{this.pic.message}} alt="">
     </ion-item>
   </ion-list>
 </ion-content>
