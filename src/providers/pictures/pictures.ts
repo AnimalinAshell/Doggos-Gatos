@@ -18,7 +18,7 @@ export class PicturesProvider {
     console.log("Hello PicturesProvider Provider");
   }
 
-  getPictures() {
+  getDogs() {
     return this.http
       .get(this.url)
       .map((res: Response) => res)

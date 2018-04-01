@@ -7,5 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-
+  <p>
+    Here you can find pictures of smaller rat bears
+  </p>
+  <ion-list>
+    <ion-item *ngFor="let pic of this.pics">
+      <img src={{this.pic}} alt="pictures of cats">
+    </ion-item>
+  </ion-list>
 </ion-content>

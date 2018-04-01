@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PicturesProvider } from '../providers/pictures/pictures';
+import { CatsProvider } from '../providers/cats/cats';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PicturesProvider } from '../providers/pictures/pictures';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PicturesProvider,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    CatsProvider
   ]
 })
 export class AppModule {}
